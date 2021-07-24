@@ -1,0 +1,86 @@
+body
+{
+  margin: 0;
+  padding: 20px;
+  
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: verdana;
+}
+
+.sidenav {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #cdcdcd;
+    padding: 20px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+   margin-left: 225px; /* Same as the width of the sidebar */
+   padding: 0px 10px;
+   font-size: 15px;
+   text-align: justify;
+   margin-right:50px;
+ }
+
+ .main a{
+  color: #cdcdcd;
+ }
+
+ .main a:hover{
+  color: #f1f1f1;
+ }
+
+li{
+   padding-top: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(99, 99, 99); 
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(165, 165, 165); 
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(156, 156, 156);
+}
+
+table, th, td {
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+table {
+  border-spacing: 5px;
+}
