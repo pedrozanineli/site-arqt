@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Computadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Página inicial</a><p></p>
+        <a href="intro.html">Introdução à matéria</a><p></p>
+        <a href="sistemas.html">Sistemas numéricos</a><p></p>
+        <a href="processador.html">Processadores ou CPU</a><p></p>
+        <a href="tiposp.html">Tipos de processador</a><p></p>
+        <a href="iparalelismo.html">Introdução paralelismo</a><p></p>
+        <a href="paremem.html">Paralelismo e memória</a><p></p>
+        <a href="compiladores.html">Compiladores</a><p></p>
+
+
+    </div>
+    
+    <div class="main">
+        <h3>Processadores ou CPU</h3>
+        
+        <p>Para podermos entender mais sobre as máquinas, analisamos nesta seção uma das unidades lógicas do computador: os <strong>processadores</strong> ou <strong>CPU</strong> (Central Processing Unit) - responsável pela busca, examinação ou decodificação e execução das instruções.</p>
+        <p>Essa unidade de processamento recebe informações de uma fonte externa para desempenhar instruções, de modo a ter esse recebimento dos dados como algo importante no processo.</p>
+        <p>Na execução de uma instrução, o seguinte caminho é seguido:</p>
+
+        <ol>
+            <li>Trazer próxima instrução da memória até registrador de instrução;</li>
+            <li>Alterar o contador de programa para que aponte para a próxima instrução;</li>
+            <li>Determinar o tipo de instrução trazida;</li>
+            <li>Se a instrução utilizar uma palavra na memória, determinar onde essa palavra está;</li>
+            <li>Trazer a palavra para dentro de um registrador da CPU se for preciso;</li>
+            <li>Executar a instrução;</li>
+            <li>Voltar à etapa para próxima execução.</li>
+        </ol>
+
+        <hr class="solid">
+
+        <p>Uma CPU tem principalmente 3 unidades básicas:</p>
+        <ol>
+            <li>Unidade de controle - busca e decodificação de uma instrução na memória;</li>
+            <li>ALU/ULA (Arithmetic Logic Unit/Unidade Lógica Aritmética) -  realização das operações booleanas e aritméticas;</li>
+            <li>Registradores - armazenamento das informações de controle por uma memória rápida, sendo responsável pelos resultados intermediários.</li>
+        </ol>
+
+        <p>Nesse sentido, importante pensar que os computadores simples em que as instruções eram interpretadas tinham os benefícios:</p>
+        <ul>
+            <li>Capacidade de correção em campo instruções executadas incorretamente ou compensar deficiências;</li>
+            <li>Oportunidade de acréscimo de novas instruções a um custo baixo;</li>
+            <li>Estruturação do projeto, permitindo desenvolvimento, teste e documentação eficiente de instruções complexas.</li>
+        </ul>
+
+        <p>Ainda sobre os processadores, podemos pensar em suas características e divisões, visto no tópico de <a href="tiposp.html">tipos de processador</a>.</p>
+        
+        
+    </div>
+
+</body>
+</html>

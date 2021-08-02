@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Computadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Página inicial</a><p></p>
+        <a href="intro.html">Introdução à matéria</a><p></p>
+        <a href="sistemas.html">Sistemas numéricos</a><p></p>
+        <a href="processador.html">Processadores ou CPU</a><p></p>
+        <a href="tiposp.html">Tipos de processador</a><p></p>
+        <a href="iparalelismo.html">Introdução paralelismo</a><p></p>
+        <a href="paremem.html">Paralelismo e memória</a><p></p>
+        <a href="compiladores.html">Compiladores</a><p></p>
+
+
+    </div>
+    
+    <div class="main">
+        <h3>Sistemas numéricos</h3>
+        <p>Nessa seção, é feita uma introdução dos sistemas de numeração, entre eles as bases binária, hexadecimal, octal, decimal e as suas respectivas conversões.</p>
+        <p>Esse estudo é bastante importante por conta de, apesar de utilizarmos cotidianamente o sistema decimal (algarismos 0 a 9), o sistema binário (apenas com 0 e 1) é útil para a representação das tensões lidas pelos computadores.</p>
+
+        <p>Bases numéricas que são utilizadas:</p>
+        <ol>
+            <li>Decimal (base 10);</li>
+            <li>Binário (base 2);</li>
+            <li>Octal (base 8);</li>
+            <li>Hexadecimal (base 16).</li>
+        </ol>
+        
+        <p><strong>Base 10</strong> - o sistema mais comumente utilizado, em que é possível escrever um número multiplicando cada elemento pela potência de 10 que representa sua posição (levando em conta que começa na posição 0).</p>
+        <p>Exemplo: 840 = 8*10<sup>2</sup> + 40*10<sup>1</sup> + 0*10<sup>0</sup>.</p>
+        
+        <p><strong>Base 2</strong> - sistema baseado em apenas dois algarismos (zero e um), configura-se como uma forma muito útil para o computador representar suas altas e baixas tensões, simplificando também os cálculos com a lógica booleana (True ou False, os dois estados lógicos).</p>
+        <p>Exemplo: o número “10” em binário representa o número “2” em decimal.</p>
+        
+        <p><strong>Base 8</strong> - sistema baseado em agora 8 algarismos (ou seja, do 0 ao 7) como uma alternativa de compactação ao binário, já que mantém uma relação direta com o sistema por ser um expoente de mesma base.</p>
+        <p>Exemplo: o número “12” em octal representa o número “10” em decimal.</p>
+        
+        <p><strong>Base 16</strong> - utilização de 16 algarismos nesse sistema (0 a 9 e A a F), o sistema hexadecimal passa a ser uma opção ainda melhor para a compactação do sistema binário. </p>
+        <p>Exemplo: o número “A” em hexadecimal representa o número “10” em decimal.</p>
+
+        <hr class="solid">
+
+        <h3>Conversão entre os sistemas numéricos</h3>
+
+        <p>Uma operação comum e bastante útil de realizar-se com esses sistemas é a conversão entre eles, como fazer com que um número, antes em decimal, seja representado agora em binário. O motivo de tal operação ser necessária é a diferença de utilização, já que é inconveniente para as máquinas utilizar normalmente o sistema decimal.</p>
+        <p>Conversão de base <strong>decimal para binária</strong> - divisões até chegar em um resto inferior a 2, de forma a juntar os restos das divisões e o quociente final para realizar a conversão.</p>
+        <p>Exemplo: 10 em decimal: 10/2 = 5 com resto 0; 5/2 = 2 com resto 1, 2/2 = 1 com resto 0 - em binário, o 10 será portanto 1010.</p>
+        <p>Conversão de base <strong>binária para decimal</strong> - multiplicação do algarismo por um expoente de posição com base 2 (levando em conta que a posição começa em 0).</p>
+        <p>Exemplo: 1010 em binário: 1*2<sup>3</sup> + 0*2<sup>2</sup> + 1*2<sup>1</sup> + 0*2<sup>0</sup> = 8 + 2 = 10 em decimal.</p>
+
+        <p>Uma vez que o objetivo principal não é o estudo dos sistemas e de suas respectivas conversões, não será abordado tais tópicos com grande teor de profundidade, mas um foco maior para a matéria de arquitetura em si.</p>
+
+        <p>O processamento e respectivos cálculos que serão feitos por parte da máquina são de responsabilidade de um dos components principais, abordados na próxima seção - <a href="processador.html">processadores ou CPU</a>.</p>
+
+    </div>
+
+</body>
+</html>

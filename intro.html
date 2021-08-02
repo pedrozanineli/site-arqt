@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Computadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Página inicial</a><p></p>
+        <a href="intro.html">Introdução à matéria</a><p></p>
+        <a href="sistemas.html">Sistemas numéricos</a><p></p>
+        <a href="processador.html">Processadores ou CPU</a><p></p>
+        <a href="tiposp.html">Tipos de processador</a><p></p>
+        <a href="iparalelismo.html">Introdução paralelismo</a><p></p>
+        <a href="paremem.html">Paralelismo e memória</a><p></p>
+        <a href="compiladores.html">Compiladores</a><p></p>
+
+
+    </div>
+    
+    <div class="main">
+        <h3>Introdução à Arquitetura de Computadores</h3>
+        <p>A Arquitetura de Computadores pode ser introduzida e compreendida inicialmente como o conjunto de métodos e regras que descrevem o funcionamento, organização e implementação dos sistemas de computadores.
+            Assim, pensando no contexto da organização e poder computacional:
+        </p>        
+        <ul>
+            <li>Grande lacuna entre o que é conveniente para as pessoas e o que é conveniente para os computadores;</li>
+            <li>Ou seja, o desafio está entre o que precisa ser feito e o que é possível ser feito.</li>
+        </ul>
+        <p>Para que seja possível solucionar tal problemática, é necessário dominar a complexidade dessa situação e projetar de forma sistemática e organizada os sistemas de computação.</p>
+        <p>Damos, portanto, o nome dessa abordagem de <strong>Organização Estruturada de Computadores</strong>.</p>
+        
+        <p>Pensando então nessa organização, podemos analisar as máquinas sobre duas perspectivas diferentes: o <strong>software</strong> e o <strong>hardware</strong>.</p>
+        <ul>
+            <li>Juntamente dos circuitos eletrônicos, memória e dispositivos de entrada e saída (I/O) é formado o hardware do computador - consiste em objetos tangíveis, não detém um nível de abstração alto;</li>
+            <li>De outro lado, temos o software, constituído dos algoritmos e as suas representações no computador: os programas - nível de abstração faz-se maior do que no hardware.</li>
+        </ul>
+        <p>Importante notar, entretanto, que hardware e software são logicamente equivalentes, ou seja, apesar de serem diferentes, são dependentes em questão de funcionamento.</p>
+
+        <hr class="solid">
+
+        <h4>Software</h4>
+        <p>Nesse sentido, um ponto fundamental do desafio proposto é a <strong>execução de programas</strong>.</p>
+        <p>Uma das formas que isso acontece é pela <strong>tradução do programa</strong>: um método de execução escrito em L1 (linguagem 1) precisa passar por uma substituição de cada instrução por uma sequência equivalente de instruções L0.</p>
+        <p>Outra forma é pela <strong>interpretação do programa</strong> (programa responsável é o interpretador): um programa em L0, com os dados de entrada por L1, examinando cada instrução por vez e executando diretamente a sequência equivalente de instruções L0.</p>
+
+        <p>Ou seja, no segundo caso, não requer que seja gerado um novo programa em L0 - sendo considerado uma vantagem no sentido de apresentar maior velocidade. Dependendo da situação, pode ser conveniente utilizar um ambiente cuja linguagem já seja L1, diminuindo a complexidade apresentada.</p>
+        <p> Para tanto, é necessário utilizar uma máquina virtual, onde, portanto, sua linguagem é L1 - vamos denominá-la aqui M1. Criamos uma máquina multinível, onde é possível a utilização de diferentes ambientes, a fim de que seja possível utilizar diferentes linguagens:</p>
+    
+        <table style="width:100%">
+            <tr>
+                <td>Primeira máquina virtual M0 com respectiva linguagem L0</td>
+            </tr>
+            <tr>
+                <td>Segunda máquina virtual M1 com respectiva linguagem L1</td>
+            </tr>
+            <tr>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>Enésima máquina virtual Mn com respectiva linguagem Ln</td>
+            </tr>
+        </table>
+
+        <hr class="solid">
+
+        <h4>Hardware</h4>
+        
+        <p>Em relação ao hardware, podemos pensar em um histórico das máquinas e dos componentes utilizados. Os computadores na década de 40 continham dois níveis:</p>
+        <ol>
+            <li>Nível ISA (onde a programação era feita);</li>
+            <li>Nível lógico digital (execução dos programas).</li>
+        </ol>
+        <p>O nível ISA - Instruction Set Architecture: conjunto de registradores, instruções e outras características visíveis para os que trabalham em baixo nível, costuma ser denominada linguagem de máquina, em código binário.</p>
+        <p>Já em 70: interpretar o nível ISA por utilização de um microprograma [*] (utilizar a microarquitetura) era dominante - abordado em uma seção futura.</p>
+        <p>A fim de facilitar a codificação, os programadores utilizavam um conjunto  um conjunto de símbolos denominado <strong>linguagem de montagem</strong>.</p>
+        <p>Note que essa situação era anterior a criação dos S.O, apenas por volta dos anos 80 acontece o surgimento de um sistema operacional. Essa operação era mantida o tempo todo, sendo que o programador produzia cartões de controle junto ao programa, que por sua vez eram lidos e executados pelo sistema operacional.</p>
+        <p>Os projetistas de máquinas perceberam a facilidade de se acrescentar novas instruções e passaram a adicionar outros diversos microprogramas [*]. Porém, notaram por fim que, eliminando os microprogramas, as máquinas poderiam ficar mais rápidas (ideia de CISC vs RISC, abordado posteriormente).</p>       
+        
+        <p>Evolução da capacidade de computação - pensando nesse contexto de constante evolução, lembrar da Lei de Moore: a cada 18 meses, dobro da capacidade - lembrar da ideia apresentada na prova, não apenas na tecnologia, mas em tudo que a envolve.</p>
+        <p>Ainda temos uma variedade de computadores, hoje ainda temos os microcontroladores, presentes em diversas aplicações (nos eletrodomésticos, em aparelhos de comunicação, periféricos de computadores, entre outros).</p>
+        <p>Termos importantes a serem lembrados:</p>
+        <ul>
+            <li>Clusters: consistem em sistemas padrão do tipo servidor, conectados por redes de gigabits/s;</li>
+            <li>Mainframes: computador usualmente utilizado por grandes organizações para aplicações críticas e análise de um largo volume de informações.</li>
+        </ul>
+        <p>Algumas famílias de computadores: arquitetura ARM, arquitetura AVR.</p>
+        <ul>
+            <li>ARM - Acorn RISC Machine (Acorn Computer, aquela que auxiliou na criação do Raspberry Pi, justamente em 1980);</li>
+            <li>AVR - usada em sistemas embutidos de muito baixo nível.</li>
+        </ul>
+
+        <p>Para continuarmos nosso estudo da Arquitetura dos Computadores e compilação de programas, precisamos entender sobre os <a href="sistemas.html">sistemas numéricos</a>.</p>
+
+    </div>
+
+</body>
+</html>
