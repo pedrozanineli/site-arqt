@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Computadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Página inicial</a><p></p>
+        <a href="intro.html">Introdução à matéria</a><p></p>
+        <a href="sistemas.html">Sistemas numéricos</a><p></p>
+        <a href="processador.html">Processadores ou CPU</a><p></p>
+        <a href="tiposp.html">Tipos de processador</a><p></p>
+        <a href="iparalelismo.html">Introdução paralelismo</a><p></p>
+        <a href="paremem.html">Paralelismo e memória</a><p></p>
+        <a href="compiladores.html">Compiladores</a><p></p>
+
+
+    </div>
+    
+    <div class="main">
+        <h3>Introdução ao paralelismo</h3>
+        <p>A idealização de paralelismo vem do desejo de realizar vários cálculos ao mesmo tempo, levando em consideração que grandes problemas podem ser subdivididos em problemas menores.</p>
+        <p>Podemos pensar em duas formas de paralelismo, de forma que cada uma tenha seus próprios méritos e vantagens.</p>
+
+        <p>A nível de:</p>
+        <ul>
+            <li>Instrução - explorado dentro de algumas instruções individuais para obter da máquina mais instruções por segundo;</li>
+            <li>Processador - várias CPUs trabalhando ao mesmo tempo no mesmo problema.</li>
+        </ul>
+        
+        <hr class="solid">
+
+        <h3><i>Pipeling</i></h3>
+        <p>Uma importante aplicação que podemos ter com o paralelismo é o pipelining, que permite compromisso entre latência [1] e largura de banda [2] de processador. Nessa técnica, múltiplas instruções são sobrepostas durante a execução e um maior rendimento pode ser alcançado.</p>
+        
+        <p>[1] Latência é entendida como o tempo que uma instrução demora para executar, o delay entre o momento da causa e sua consequência;</p>
+        <p>[2] Largura de banda pode ser compreendida como a velocidade com que os dados trafegam através de uma rede específica.</p>
+        
+        <p>No pipeline, como o tempo de um ciclo é definido como T ns (ou seja, um tempo em nanosegundos) e n,a latência é definida como <strong>nT ns</strong>, já que cada instrução passa por n estágios que demandam T ns.</p>
+        <p>Ou seja, se tenho uma instrução que é concluída a cada ciclo de clock; há 10<sup>9</sup>/T ciclos de clock por segundo; o número de instruções executadas por segundo é de 10<sup>9</sup>/T.</p>
+
+        <p>Na seção de <a href="processador.html">processadores ou CPU</a>, é discutido a respeito das etapas de execução de uma instrução, e, pensando agora no conceito de paralelismo, podemos pensar em uma aplicação nas etapas 1, 4 e 6. Ou seja:</p>
+        <p>1. Trazer próxima instrução da memória até registrador de instrução;</p>
+        <p>4. Se a instrução utilizar uma palavra na memória, determinar onde essa palavra está;</p>
+        <p>6. Executar a instrução.</p>
+
+        <p>Para entendermos de maneira mais clara o paralelismo, é necessário conhecermos melhor o <a href="paremem.html">paralelismo aplicado ao processador e introduzir o conceito de memória</a>.</p>
+
+
+    </div>
+
+</body>
+</html>

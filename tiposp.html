@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Computadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Página inicial</a><p></p>
+        <a href="intro.html">Introdução à matéria</a><p></p>
+        <a href="sistemas.html">Sistemas numéricos</a><p></p>
+        <a href="processador.html">Processadores ou CPU</a><p></p>
+        <a href="tiposp.html">Tipos de processador</a><p></p>
+        <a href="iparalelismo.html">Introdução paralelismo</a><p></p>
+        <a href="paremem.html">Paralelismo e memória</a><p></p>
+        <a href="compiladores.html">Compiladores</a><p></p>
+
+
+    </div>
+    
+    <div class="main">
+        <h3>Tipos de processador</h3>
+        
+        <p>Ainda sobre os processadores, podemos pensar nos modelos criados ao longo do tempo: CISC e RISC - em que a grande diferença entre eles é o número de suporte de instruções. Na tabela abaixo, é possível entender mais sobre essas discrepâncias:</p>
+
+        <table style="width:100%">
+            <tr>
+              <th>CISC</th>
+              <th>RISC</th>
+            </tr>
+            <tr>
+              <td>Intel aplicou as mesmas ideias na arquitetura CISC</td>
+              <td>Número relativamente pequeno de instruções e nº de instruções menor que o dos mainframes da IBM</td>
+            </tr>
+            <tr>
+              <td>Suporta mais instruções, mas faz com que seja mais lento</td>
+              <td>Suporta menos instruções, e por isso é mais rápido</td>
+            </tr>
+          </table>
+
+          <p>Apesar de uma abordagem híbrida entre esses dois tipos de chips não ser tão rápida quanto um RISC puro, tem como resultado um desempenho global competitivo, além de permitir que softwares antigos sejam executados sem modificação.</p>
+
+          <p>Princípios de projeto RISC que os arquitetos de CPUs seguem - ou tentam:</p>
+          
+          <ul>
+            <li>Instruções executadas diretamente por hardware;</li>
+            <li>Maximizar taxa de execução das instruções;</li>
+            <li>Instruções devem ser fáceis de decodificar;</li>
+            <li>Somente LOAD e STORE (que são instruções do chip) devem referenciar a memória (sempre vão ter em uma máquina);</li>
+            <li>É preciso providenciar muitos registradores.</li>
+          </ul>
+          
+          <p>A respeito dessas instruções que devem ser executadas, podemos pensar em uma execução simultânea e introduzir o conceito de <a href="iparalelismo.html">paralelismo</a>.</p>
+
+
+    </div>
+
+</body>
+</html>
